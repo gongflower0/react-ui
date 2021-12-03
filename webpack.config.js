@@ -1,4 +1,5 @@
 const path=require('path')
+const HtmlWebpackPlugin=require('html-webpack-plugin')
 module.exports={//node.js 模块定义
     mode:'production',//生产模式
     entry:{
@@ -16,5 +17,10 @@ module.exports={//node.js 模块定义
                 loader:'awesome-typescript-loader'//将tsx文件翻译成js文件
             }
         ]
-    }
+    },
+    plugins:[
+        new HtmlWebpackPlugin({
+            template: 'index.html'
+        })
+    ]
 }
