@@ -5,6 +5,9 @@ module.exports={//node.js 模块定义
     entry:{
         index:'./lib/index.tsx'
     },
+    resolve:{
+        extensions:['.ts','.tsx','.js','jsx']
+    },
     output:{
         path:path.resolve(__dirname,'dist/lib'),
         library:'react-ui',
