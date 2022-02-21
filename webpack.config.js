@@ -18,6 +18,10 @@ module.exports={//node.js 模块定义
             {
                 test:/\.tsx?$/,
                 loader:'awesome-typescript-loader'//将tsx文件翻译成js文件
+            },
+            {
+                test:/\.svg$/,
+                loader:'svg-sprite-loader',
             }
         ]
     },
