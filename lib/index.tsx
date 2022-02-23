@@ -1,16 +1,4 @@
-import ReactDOM from 'react-dom';
-import React from 'react';
-import Icon from './icon/icon';
+export {default as Icon} from './icon/icon';
 
-const fn: React.MouseEventHandler = (e) => {
-  console.log(e.target);
-};
+import './index.scss';
 
-ReactDOM.render(<div>
-  <Icon name="wechat"
-        onClick={fn}
-        onMouseEnter={() => console.log('enter')}
-        onMouseLeave={() => console.log('leave')}
-        onTouchStart={() => console.log('touch')}
-  />
-</div>, document.querySelector('#root'));
