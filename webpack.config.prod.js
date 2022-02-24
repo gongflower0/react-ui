@@ -1,8 +1,7 @@
-const base =require('./webpack.config')
-
-module.exports= Object.assign({},base,{//node.js 模块定义
-    mode:'production',//生产模式
-    externals: {//告诉webpack，这是外部的库，不需要打包。
+const base = require('./webpack.config')
+module.exports = Object.assign({}, base, {
+    mode: 'production',
+    externals: {
         react: {
             commonjs: 'react',
             commonjs2: 'react',
